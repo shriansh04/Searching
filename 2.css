@@ -36,25 +36,59 @@
             font-size: 100px;
             justify-content: center;
             font-family: 'Pacifico', cursive;
-            background-image: linear-gradient(135deg, white,white,#f9c47e, #f14e58, #766af3);
-            background-size: 200% 100%;
+            background-image: linear-gradient(135deg, white,white,white,white,#f9c47e, #f14e58, #766af3);
+            background-size: 275% 100%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: gradient forwards 3s;
+            animation: animate2 forwards 6s;
         }
-        @keyframes gradient {
-            0% {
+
+        @keyframes animate {
+            0%{
+                clip-path: polygon(80% 0, 100% 0%, 100% 100%, 80% 100%, 100% 59%);
+            }
+            9%{clip-path: polygon(80% 0, 100% 0%, 100% 100%, 80% 100%, 88% 42%);
+            }
+            18%{clip-path: polygon(65% 0, 100% 0%, 100% 100%, 80% 100%, 71% 52%);         
+            }
+            27%{clip-path: polygon(65% 0, 100% 0%, 100% 100%, 60% 100%, 57% 34%);             
+            }
+            36%{clip-path: polygon(46% 0, 100% 0%, 100% 100%, 60% 100%, 46% 51%);                             
+            }
+            45%{clip-path: polygon(46% 0, 100% 0%, 100% 100%, 38% 100%, 34% 44%);                
+            }
+            54%{clip-path: polygon(22% 0, 100% 0%, 100% 100%, 38% 100%, 22% 64%);                
+            }
+            63%{clip-path: polygon(22% 0, 100% 0%, 100% 100%, 15% 100%, 11% 44%);                
+            }
+            72%{clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 34%);             
+            }
+            81% {
                 background-position: 0% 50%;
             }
 
-            50% {
+            90% {
                 background-position: 50% 50%;
             }
-
             100% {
                 background-position: 100% 50%;
-            }    
-
+            } 
+        }
+        @keyframes animate2 {
+            0%{
+                clip-path: circle(0% at 100% 50%);
+            }
+            80%{clip-path: circle(150% at 100% 50%);             
+            }
+            87% {
+                background-position: 60% 50%;
+            }
+            94% {
+                background-position: 80% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            } 
         }
 
         input[type=search] {
