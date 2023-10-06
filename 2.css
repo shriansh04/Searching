@@ -1,18 +1,20 @@
         :root {
             --pc: #000000;
+            --bc: #000000;
             --sc: #ffffff;
             --tc: rgba(255, 255, 255, 0.25);
         }
 
         .on {
-            --pc: #f7f4f4c5;
+            --pc: #ffffff;
+            --bc: #f7f4f4cs;
             --sc: #000000;
             --tc: rgb(0, 0, 0);
         }
 
         .bck {
             /* background-image: linear-gradient(to right, rgb(19, 1, 97) 0%, rgba(0, 0, 0, 1) 100%); */
-            background-color: var(--pc);
+            background-color: var(--bc);
         }
 
         .header {
